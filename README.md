@@ -12,7 +12,7 @@
 
 #### Vanlia Javascript 🕶
 
-- [text](vanila-javascript/login-ui-1/)
+- [Login UI #1](vanila-javascript/login-ui-1/)
 
 ---
 
