@@ -16,4 +16,4 @@
 
 ---
 
-> Feel free to send pull requests
+> Feel free to submit pull requests
