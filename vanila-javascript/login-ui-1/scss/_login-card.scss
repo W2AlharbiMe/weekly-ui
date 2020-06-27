@@ -1,0 +1,100 @@
+.login-card {
+  width: 850px;
+  border-radius: 30px;
+  position: relative;
+  //   z-index: 1;
+
+  &::before {
+    content: "";
+    filter: blur(27px);
+    background-color: $blur-effect;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: -20px;
+    bottom: -20px;
+  }
+
+  .main-area {
+    padding: 50px;
+    width: 450px;
+  }
+
+  #gray {
+    color: $gray;
+  }
+
+  .input {
+    background-color: transparent;
+    border: 2px solid $border-color;
+    font-size: 18px;
+    // padding: 27px;
+    padding-left: 20px;
+    height: 60px;
+    width: 100%;
+    color: $label-color;
+    border-radius: 5px;
+    transition: 250ms ease-out;
+
+    &:focus {
+      //   border-color: lighten($border-color, 20%);
+      border-color: lighten($primary, 20%);
+    }
+  }
+
+  #next {
+    font-size: 18px;
+    color: $white;
+    background-color: $primary;
+    border: 0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 10px 25px rgba(4, 101, 134, 0.6);
+    transition: 250ms ease-out;
+
+    &:hover {
+      background-color: lighten($primary, 10%);
+    }
+  }
+
+  .social-oauth {
+    button {
+      width: 50%;
+      height: 55px;
+      background-color: transparent;
+      border-radius: 5px;
+      border: 2px solid $light-gray;
+      transition: 250ms ease-out;
+    }
+
+    #facebook {
+      &:hover {
+        border-color: #3b5998;
+      }
+    }
+
+    #google {
+      &:hover {
+        border-color: #db4437;
+      }
+    }
+  }
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $label-color;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: $label-color;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: $label-color;
+}

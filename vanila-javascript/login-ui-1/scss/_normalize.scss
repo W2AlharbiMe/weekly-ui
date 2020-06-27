@@ -1,0 +1,36 @@
+* {
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: $body-bg;
+  font-family: "Source Sans Pro", sans-serif !important;
+  color: $body-color;
+}
+
+a {
+  color: $links-color;
+  transition: 250ms ease-out;
+
+  &:hover {
+    color: lighten($links-color, 20%);
+  }
+}
+
+hr {
+  border: 1px solid $light-gray;
+}
+
+p {
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
